@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #333;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.container {
+  width: 1675px;
+  height: 1054px;
+  position: relative;
+  background: white;
+  overflow: hidden;
+  transform: scale(0.755);
+  transform-origin: top left;
+}
+
+.main-wrapper {
+  width: 1675px;
+  height: 1054px;
+  position: absolute;
+  background: white;
+}
+
+.background-image {
+  width: 1922px;
+  height: 1281px;
+  background-image: url('/background.jpeg');
+  background-size: cover;
+  left: -247px;
+  top: -227px;
+  position: absolute;
+}
+
+.logo {
+  width: 250px;
+  height: 250px;
+  background-image: url('/public/sonelgaz-logo-png_seeklogo-334809.png');
+  background-size: cover;
+  left: 60px;
+  top: 46px;
+  position: absolute;
+  box-shadow: 0px 4px 4px black;
+}
+
+.signup-card {
+  width: 540px;
+  height: 798px;
+  left: 1025px;
+  top: 125px;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 4px 4px black;
+  border-radius: 45px;
+}
+
+.input-field {
+  width: 500px;
+  height: 70px;
+  position: absolute;
+  background: rgba(217, 217, 217, 0.50);
+  border-radius: 20px;
+  border: none;
+  padding: 0 20px;
+  font-size: 24px;
+  outline: none;
+}
+
+.input-field::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.input-password { left: 1045px; top: 465px; }
+.input-id { left: 1045px; top: 562px; }
+.input-email { left: 1045px; top: 368px; }
+.input-username { left: 1045px; top: 277px; }
+
+.tab-container {
+  width: 480px;
+  height: 60px;
+  left: 1055px;
+  top: 141px;
+  position: absolute;
+  background: rgba(255, 252, 252, 0.5);
+  border-radius: 30px;
+}
+
+.tab-active {
+  width: 235px;
+  height: 45px;
+  left: 1293px;
+  top: 148px;
+  position: absolute;
+  background: #DC8627;
+  border-radius: 30px;
+}
+
+.tab-text {
+  position: absolute;
+  color: black;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.tab-client { left: 1146px; top: 155px; }
+.tab-employee { left: 1375px; top: 155px; }
+
+.signup-title {
+  left: 1058px;
+  top: 210px;
+  position: absolute;
+  color: rgba(255, 255, 255, );
+  font-size: 48px;
+}
+
+.forget-password {
+  left: 1349px;
+  top: 485px;
+  position: absolute;
+  color: blue;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.continue-text {
+  left: 1209px;
+  top: 653px;
+  position: absolute;
+  color: rgba(255, 255, 255, );
+  font-size: 24px;
+}
+
+.social-icon-facebook {
+  width: 93px;
+  height: 93px;
+  background-image: url('/facebook.webp');
+  background-size: cover;
+  left: 1418px;
+  top: 705px;
+  position: absolute;
+}
+
+.social-icon-email {
+  width: 133px;
+  height: 133px;
+  background-image: url('/emeil.webp');
+  background-size: cover;
+  left: 1070px;
+  top: 685px;
+  position: absolute;
+}
+
+.social-label {
+  position: absolute;
+  color: rgba(255, 255, 255, );
+  font-size: 24px;
+}
+
+.label-email { left: 1111px; top: 798px; }
+.label-facebook { left: 1420px; top: 798px; }
+
+.hero-text {
+  left: 60px;
+  top: 327px;
+  position: absolute;
+  color: rgba(255, 255, 255, );
+  font-size: 40px;
+  text-align: center;
+}
+
+.have-account {
+  left: 1045px;
+  top: 856px;
+  position: absolute;
+  color: rgba(255, 255, 255,);
+  font-size: 24px;
+}
+.login-link {
+  left: 1238px;
+  top: 856px;
+  position: absolute;
+  color: blue;
+  font-size: 24px;
+  text-decoration: none;
+}

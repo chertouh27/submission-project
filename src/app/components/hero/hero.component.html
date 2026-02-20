@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Page</title>
+  <div class="hero">
+  </div>
+  <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="scale-wrapper">
+  <div class="container">
+    <div class="main-wrapper">
+      <img class="background-image" src="https://images.pexels.com/photos/29352929/pexels-photo-29352929.jpeg" alt="Background">
+      <img class="logo" src="https://imgs.search.brave.com/raA0FXaZISGyG3GSse6yKxZ4KzbSEM18I8TfY5xhx2o/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc2Vla2xvZ28u/Y29tL2xvZ28tcG5n/LzMzLzIvc29uZWxn/YXotbG9nby1wbmdf/c2Vla2xvZ28tMzM0/ODA5LnBuZw" alt="Logo">
+      <div class="signup-card"></div>
+      
+      <!-- Input Fields -->
+      <input type="text" class="input-field input-username" placeholder="enter your user name">
+      <input type="email" class="input-field input-email" placeholder="enter your email">
+      <input type="password" class="input-field input-password" placeholder="enter your password">
+      <input type="text" class="input-field input-id" placeholder="enter your ID">
+      
+      <!-- Tabs -->
+      <div class="tab-container"></div>
+      <div class="tab-active"></div>
+      <div class="tab-text tab-client">Client</div>
+      <div class="tab-text tab-employee">Employee</div>
+      
+      <!-- Title -->
+      <div class="signup-title">sign up</div>
+      
+      <!-- Forget Password -->
+      <a href="#" class="forget-password">forget password ?</a>
+      
+      <!-- Social Section -->
+      <div class="continue-text">or continue with</div>
+      <img class="social-icon-email" src="https://imgs.search.brave.com/QPURvaMS_9VcTMvz6DQJInCtUqB9nkffML_kdg6DNpU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNDgv/MTE2LzMwMy9zbWFs/bC9nbWFpbC1lbWFp/bC1sb2dvLWljb24t/ZnJlZS1wbmcucG5n" alt="Email">
+      <img class="social-icon-facebook" src="https://imgs.search.brave.com/eGF8i3hvq2fNmxhtBCZCbs5v8v7Qr4IqMfepbi50gzA/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNDIv/MTI3LzIwMi9zbWFs/bC9zcXVhcmUtYmx1/ZS1mYWNlYm9vay1s/b2dvLXdpdGgtbG9u/Zy1zaGFkb3ctb24t/YS10cmFuc3BhcmVu/dC1iYWNrZ3JvdW5k/LWZyZWUtcG5nLnBu/Zw" alt="Facebook">
+      <div class="social-label label-email">email</div>
+      <div class="social-label label-facebook">facebook</div>
+      
+      <!-- Hero Text -->
+      <div class="hero-text">Powering the future <br/>of <br/>Algeria</div>
+      
+      <!-- Login Link -->
+      <div class="have-account">have an account ?</div>
+      <a href="#" class="login-link">log in</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Auto-scale to fit screen
+  function scaleToFit() {
+    const wrapper = document.querySelector('.scale-wrapper');
+    const container = document.querySelector('.container');
+    
+    const containerWidth = 1675;
+    const containerHeight = 1054;
+    
+    const screenWidth = window.innerWidth;
+    const screenHeight = window.innerHeight;
+    
+    // Calculate scale based on width and height
+    const scaleX = screenWidth / containerWidth;
+    const scaleY = screenHeight / containerHeight;
+    
+    // Use the smaller scale to fit entirely on screen
+    const scale = Math.min(scaleX, scaleY);
+    
+    wrapper.style.transform = `scale(${scale})`;
+  }
+  
+  // Run on load and resize
+  window.addEventListener('load', scaleToFit);
+  window.addEventListener('resize', scaleToFit);
+</script>
+
+</body>
+</html>
